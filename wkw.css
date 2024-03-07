@@ -1,0 +1,217 @@
+body {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: #121212; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    background-color: #1f1f1f; /* Slightly lighter than body background */
+    color: #fff; /* Light text */
+}
+.header .nav a {
+    color: #fff; /* Change the color to white */
+    text-decoration: none; /* Remove the underline */
+    margin: 0 10px; /* Add some horizontal margin */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+}
+
+.header .nav a:hover {
+    background-color: #555; /* Change the background color when hovering */
+    color: #fff; /* Change the text color when hovering */
+}
+.footer .nav a {
+    color: #fff; /* Change the color to white */
+    text-decoration: none; /* Remove the underline */
+    margin: 0 10px; /* Add some horizontal margin */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+}
+
+.footer .nav a:hover {
+    background-color: #555; /* Change the background color when hovering */
+    color: #fff; /* Change the text color when hovering */
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('hero-background0.png');  /* replace with your image */
+    background-size: cover;  /* cover the entire hero section */
+    background-position: center;  /* center the background image */
+    height: 100vh;  /* adjust as needed */
+    color: white;  /* adjust as needed */
+    text-align: center;
+    width: 100%;  /* make the hero section full width */
+}
+
+.featured-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column img {
+    width: 100%;
+    max-width: 350px; /* Increase the max-width to make the images slightly bigger */
+    height: auto;
+    margin: 10px; /* Add some space around the images */
+}
+
+.movie {
+    background-color: #1f1f1f; /* Same as header/footer */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.movie a {
+    color: #00ff00; /* Neon green */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movie img {
+    width: 1000px;
+    height: auto;
+}
+
+.movie-info {
+    font-size: 16px;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #fff; /* Light text */
+}
+
+.header .logo, .footer .logo {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.header .nav, .footer .nav {
+    margin-right: 20px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1f1f1f; /* Same as header/footer */
+    color: #fff; /* Light text */
+}
+
+.main h1, .main h2 {
+    color: #fff;
+}
+
+.main p {
+    margin-bottom: 10px;
+}
+
+.main ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main ul li {
+    background: #1f1f1f;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* Existing CSS */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .content-wrapper,
+    .hero,
+    .featured-content,
+    .column,
+    .movie,
+    .header,
+    .footer,
+    .nav,
+    .logo,
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie,
+    .main {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .content-wrapper,
+    .hero,
+    .featured-content,
+    .column,
+    .movie,
+    .header,
+    .footer,
+    .nav,
+    .logo,
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie,
+    .main {
+        width: 100%;
+    }
+}
+/* Image Transition */
+.image-transition {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-transition:hover {
+    transform: scale(1.1); /* Increase the size when hovering */
+}
+/* Scroll Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.scroll-animation {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0; /* Start with opacity 0 */
+}

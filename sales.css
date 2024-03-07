@@ -1,0 +1,188 @@
+body {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: #121212; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #fff; /* Light text */
+}
+.footer .nav a {
+    color: #fff; /* Change the color to white */
+    text-decoration: none; /* Remove the underline */
+    margin: 0 10px; /* Add some horizontal margin */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+}
+
+.footer .nav a:hover {
+    background-color: #555; /* Change the background color when hovering */
+    color: #fff; /* Change the text color when hovering */
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column img {
+    width: 100%;
+    max-width: 400px; /* Increase the max-width to make the images slightly bigger */
+    height: auto;
+    margin: 10px; /* Add some space around the images */
+}
+
+.movie {
+    background-color: #1f1f1f; /* Same as header/footer */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.movie a {
+    color: white; /* Neon green */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movie img {
+    width: 1000px;
+    height: auto;
+}
+
+.movie-info {
+    font-size: 16px;
+    color: #fff; /* Light text */
+}
+
+.header, .footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header .logo, .footer .logo {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.header .nav, .footer .nav {
+    margin-right: 20px;
+}
+.header .nav a {
+    color: #fff; /* Change the color to white */
+    text-decoration: none; /* Remove the underline */
+    margin: 0 10px; /* Add some horizontal margin */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+}
+
+.header .nav a:hover {
+    background-color: #555; /* Change the background color when hovering */
+    color: #fff; /* Change the text color when hovering */
+}
+
+.nav {
+    text-align: right;
+    color: #fff; /* Light text */
+
+}
+.featured-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+    }
+
+    .featured-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+    }
+
+    .featured-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie {
+        width: 100%;
+    }
+}
+/* Hover Effect */
+.nav a:hover {
+    color: #ff6347; /* Change the color when hovering */
+    transform: scale(1.1); /* Increase the size when hovering */
+}
+
+
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.scroll-animation {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0; /* Start with opacity 0 */
+}
+
+/* Image Transition */
+.image-transition {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-transition:hover {
+    transform: scale(1.1); /* Increase the size when hovering */
+}
