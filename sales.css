@@ -6,8 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background: #121212; /* Dark background */
-    color: #fff; /* Light text */
+    background: #121212;
+    color: #fff;
 }
 
 .header, .footer {
@@ -15,22 +15,22 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    color: #fff; /* Light text */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
 }
 .footer .nav a {
-    color: #fff; /* Change the color to white */
-    text-decoration: none; /* Remove the underline */
-    margin: 0 10px; /* Add some horizontal margin */
-    padding: 5px 10px; /* Add some padding */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .footer .nav a:hover {
-    background-color: #555; /* Change the background color when hovering */
-    color: #fff; /* Change the text color when hovering */
+    background-color: #555;
+    color: #fff;
 }
 .content-wrapper {
     display: flex;
@@ -46,20 +46,20 @@ body {
 
 .column img {
     width: 100%;
-    max-width: 400px; /* Increase the max-width to make the images slightly bigger */
+    max-width: 400px;
     height: auto;
-    margin: 10px; /* Add some space around the images */
+    margin: 10px;
 }
 
 .movie {
-    background-color: #1f1f1f; /* Same as header/footer */
+    background-color: #1f1f1f;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
 }
 
 .movie a {
-    color: white; /* Neon green */
+    color: white;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
@@ -72,7 +72,7 @@ body {
 
 .movie-info {
     font-size: 16px;
-    color: #fff; /* Light text */
+    color: #fff;
 }
 
 .header, .footer {
@@ -90,22 +90,22 @@ body {
     margin-right: 20px;
 }
 .header .nav a {
-    color: #fff; /* Change the color to white */
-    text-decoration: none; /* Remove the underline */
-    margin: 0 10px; /* Add some horizontal margin */
-    padding: 5px 10px; /* Add some padding */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .header .nav a:hover {
-    background-color: #555; /* Change the background color when hovering */
-    color: #fff; /* Change the text color when hovering */
+    background-color: #555;
+    color: #fff;
 }
 
 .nav {
     text-align: right;
-    color: #fff; /* Light text */
+    color: #fff;
 
 }
 .featured-content {
@@ -160,8 +160,8 @@ body {
 }
 /* Hover Effect */
 .nav a:hover {
-    color: #ff6347; /* Change the color when hovering */
-    transform: scale(1.1); /* Increase the size when hovering */
+    color: #ff6347;
+    transform: scale(1.1);
 }
 
 
@@ -175,7 +175,7 @@ body {
 .scroll-animation {
     animation: fadeIn 1s ease-in-out;
     animation-fill-mode: forwards;
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
 }
 
 /* Image Transition */
@@ -184,5 +184,5 @@ body {
 }
 
 .image-transition:hover {
-    transform: scale(1.1); /* Increase the size when hovering */
+    transform: scale(1.1);
 }
